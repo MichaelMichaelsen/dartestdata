@@ -39,6 +39,7 @@ my $dbh      = DBI->connect($uuiddsn, $userid, $password, { RaiseError => 1 }) o
 
 findposition($dbh,$table,$uuid);
 
+
 $dbh->disconnect();
 close($fh);
 #
